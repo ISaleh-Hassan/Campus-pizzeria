@@ -1,5 +1,41 @@
-.family-sans{
+.site-header{
+    background: grey;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.site-header .layout-hero{
+    min-height: 5vh;
+}
+
+.site-header .page-section-title{
+    font-size: 3em;
+    font-weight: 200;
+}
+
+.site-header .page-section-text{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+#page-multicolumn{
+    background: lightblue
+}
+
+.page-section-header .page-section-title{
+    font-size: 4em;
+    font-weight: 200;
+    color: #533777;
+}
+
+.page-section-header .page-section-text{
+    font-size: 1.2em;
+    font-weight: 200;
+}
+
+#page-carousel{
+    background: lightcoral;
 }
 
 .layout-social .layout-icon {
