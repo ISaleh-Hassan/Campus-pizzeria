@@ -1,58 +1,70 @@
 .site-header{
-    background: rgb(9, 1, 80);
+    background: url("../images/Pizza-1.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     width: 100%;
-    height: 600px;
+    height: 970px;
     
 }
 
-.site-header .layout-hero{
-    min-height: 5vh;
+.nav-item{
+    margin: 0px 20px 0px 20px;
+    font-size: 1.5em;
 }
 
-.site-header .page-section-title{
-    font-size: 3em;
-    font-weight: 200;
-}
-
-.site-header .page-section-text{
-    font-size: 1.2em;
-    font-weight: 200;
+.nav-item:hover {
+     color:  #ffc107 !important;
 }
 
 #page-multicolumn{
     background: green;
 }
 
-.page-section-header .page-section-title{
-    font-size: 4em;
-    font-weight: 200;
-    color: #533777;
+.container .row{
+    margin: auto;
 }
 
-.page-section .p{
-    font-size: 1em;
-    font-weight: 200;
-    color: #533777;
+.main-buttons{
+    margin-top: 350px;   
 }
 
-.page-section-header .page-section-text{
-    font-size: 1.2em;
-    font-weight: 200;
+.box{
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%,-50);
+    bottom: 4px;
 }
-
-.navbar-nav .nav-item{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.5em;
+.box span{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #ffc107;
+    border-right: 1px solid #ffc107;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.box span:nth-child(1){
+    animate-delay: -0.2s;
     
-    margin-left: 2em;
 }
-
-.layout-social .layout-icon {
-    font-size: 2em;
+.box span:nth-child(2){
+    animate-delay: -0.4s;
 }
+@keyframes animate{
 
-
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}

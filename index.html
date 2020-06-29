@@ -16,10 +16,10 @@
   
   <header id="page-hero" class="site-header">
     <!--här börjar navbar-->
-    <nav class="site-nav family-sans navbar navbar-expand-md navbar-dark">
+    <nav class="site-nav family-sans navbar navbar-expand-md navbar-dark bg-dark">
 
       <div class="container-fluid">
-        <a class="navbar-brand" href="#page-hero"><img 
+        <a class="navbar-brand " href="#page-hero"><img 
           src="images/logo.svg" 
           alt="triangle with all three sides equal"
           height="87"
@@ -27,9 +27,9 @@
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" 
         aria-controls="#myTogglerNav" aria-label="Toggle Navigation"><span class="navbar-toggler-icon"></span></button>
 
-        <section class="collapse navbar-collapse mt-5" id="myTogglerNav">
+        <section class="collapse navbar-collapse  position-static" id="myTogglerNav">
         <div class="navbar-nav mx-auto">
-         <a class="nav-item nav-link" href="#page-hero">Home</a>
+         <a class="nav-item nav-link" href="#page-hero">Hem</a>
          <a class="nav-item nav-link" href="#page-multicolumn">Meny</a>
          <a class="nav-item nav-link" href="#page-media">Om oss</a>
          <a class="nav-item nav-link" href="#page-photogrid">Kontakta oss</a>
@@ -39,28 +39,29 @@
     </nav>
 
     <!--här börjar första sidan-->
-    <section class="layout-hero d-flex text-light text-left">
-      <div class="container mt-5">
-        <div class="row mt-5">
-          <div class="col-6 col-sm-6">
-            <h1>VÅRA GODA PIZZOR</h1>       
-            <h1>DAGENS LUNCH <br>från 79:-</h1>
-            <p><b>Mån - Fre 11.00 - 14.00<b></b></b></p><b><b>
-            <p >Till Lunchen ingår 33CL Dricka, Kaffe Sallad, bröd &amp; Smör.</p>
-          </b></b>
-          </div>
+      <section class="container">
+        <div class="row">
+         <div class="main-buttons text-center col-12">
+          <button type="button" class="btn btn-warning mr-3 text-center">Beställa hem</button>
+          <button type="button" class="btn btn-warning ml-3 text-center">Se menyn</button>
+         </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   </header>
 
+  <!--här börjar pilar för CSS animation-->
+  <div class="box">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
   
    <!--här börjar andra sidan sidan-->
   <article id="page-multicolumn" class="page-section text-center py-5">
     <header class="page-section-header container">
-      <h2 class="page-section-title">Om oss</h2>
+      <h2 class="page-section-title">Campus pizzeria</h2>
       <p class="page-section-text">Våra medarbetare har många års erfarenhet av att baka godaste pizzor</p>
     </header>
 
@@ -78,7 +79,7 @@
         </section>
   
         <section class="col-sm-12 col-lg-6 col-md-6">
-          <h5 class="layout-title pt-2">Yodel</h5>
+          <h5 class="layout-title pt-2"></h5>
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
