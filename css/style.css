@@ -1,35 +1,25 @@
-.site-header{
-    background: url("../images/Pizza-1.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    width: 100%;
-    height: 970px;
-    
+.main-container{
+        background: #c62222;
+        height: 90vh;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 50vh;
+        text-align: center;  
+        border: 5px solid greenyellow;
 }
 
-.nav-item{
-    margin: 0px 20px 0px 20px;
-    font-size: 1.5em;
+.row{
+    border: 5px solid grey;
 }
 
-.nav-item:hover {
-     color:  #ffc107 !important;
+
+.About-oss{
+    background: lightblue;
 }
 
-#page-multicolumn{
-    background: green;
-}
-
-.container .row{
-    margin: auto;
-}
-
-.main-buttons{
-    margin-top: 350px;   
-}
-
+/*Här börjar min CSS animation där jag skapar en border som bara har två kanter 'bottom & right' som har position absolute så att jag kan 
+flytta på den. Tanken är att den ska synas i mitt och i slutet av sidan så att användaren ska veta att jag har en sida neråt */
 .box{
     position: absolute;
     top: 89%;
@@ -37,23 +27,19 @@
     transform: translate(-50%,-50);
     bottom: 4px;
 }
+/*Under animation så säger jag att jag ska ha en oändlig animation som ska dyka upp och försvinna inom två sekunder*/
 .box span{
     display: block;
     width: 20px;
     height: 20px;
     border-bottom: 1px solid #ffc107;
     border-right: 1px solid #ffc107;
-    transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
 }
-.box span:nth-child(1){
-    animate-delay: -0.2s;
-    
-}
-.box span:nth-child(2){
-    animate-delay: -0.4s;
-}
+
+/*opacity är först lika med 0 så småningom efter halva tiden börjar pilarna visas och sedan i slutet försvinner dem igen. Transoform roterar 
+min halva border så att den ska se ut som en pil som pekar neråt*/
 @keyframes animate{
 
     0%{

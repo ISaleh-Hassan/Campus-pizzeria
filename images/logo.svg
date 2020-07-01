@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<!--Här säger vi att vi har en svg som har höjd och beredd på 100%.-->
+
 <svg width="100%" height="100%" viewBox="0 0 800 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g id="XMLID_1864_" transform="matrix(0.67409,0,0,0.612457,224.634,138.299)">
-        <path d="M501.634,487.318L409.45,78.027L409.306,78.06C401.47,91.878 386.638,101.208 369.62,101.208C240.68,101.209 132.704,192.624 107.062,314.044L105.501,363.052L124.53,363.052C144.121,363.052 160.004,378.934 160.004,398.525L160.004,479.436C160.004,491.898 170.107,502.001 182.568,502.001C195.031,502.001 205.133,491.898 205.133,479.436L205.133,466.751C205.133,458.226 212.045,451.315 220.57,451.315C225.971,451.315 230.725,448.54 233.484,444.338L233.481,444.336L487.32,501.626C495.898,503.562 503.566,495.897 501.634,487.318Z" style="fill:rgb(255,230,192);fill-rule:nonzero;"/>
+ 
+  <!--Här ser vi några tag som börjar med bokstaven 'g' som står för grupp av elemnt. Varje grupp har ett unikt ID.-->  
+
+  <g id="XMLID_1864_" transform="matrix(0.67409,0,0,0.612457,224.634,138.299)">
+      
+      <!--Path är en av de effektiva element som finns i SVG. Med hjälp av den kan man rita linjer, kurvor, bågar och mer. i Pathen som vi har här under så ser vi bokstaven d som 
+	är ett attribut som innehåller en serie sökkommandon som definierar sökvägen som ska ritas. Svg är funkar som kordinat system där x =0 och y =0 är placerad längst upp  till vänster i själva html sidan. För att fi ska börja rita
+	så ser vi bokstaven M som står för move to, då flyttas själva ritningen till punkten x= 501 y=115 osv. Vi har en lång rad av dessa punkter och i slutet av de för de stil med färg och sånt där allting översättas till Vector bild i slutet.-->
+   
+     <path d="M501.634,487.318L409.45,78.027L409.306,78.06C401.47,91.878 386.638,101.208 369.62,101.208C240.68,101.209 132.704,192.624 107.062,314.044L105.501,363.052L124.53,363.052C144.121,363.052 160.004,378.934 160.004,398.525L160.004,479.436C160.004,491.898 170.107,502.001 182.568,502.001C195.031,502.001 205.133,491.898 205.133,479.436L205.133,466.751C205.133,458.226 212.045,451.315 220.57,451.315C225.971,451.315 230.725,448.54 233.484,444.338L233.481,444.336L487.32,501.626C495.898,503.562 503.566,495.897 501.634,487.318Z" style="fill:rgb(255,230,192);fill-rule:nonzero;"/>
     </g>
     <g id="XMLID_1722_" transform="matrix(0.67409,0,0,0.612457,224.637,138.3)">
         <path d="M115.378,115.311C148.384,82.304 186.831,56.386 229.651,38.275C274.009,19.514 321.102,10 369.62,10C394.807,10 415.224,30.417 415.224,55.604C415.224,80.789 394.806,101.208 369.62,101.208C221.653,101.209 101.275,221.588 101.274,369.554C101.274,394.739 80.856,415.158 55.67,415.158C30.483,415.158 10.066,394.741 10.066,369.554C10.066,321.035 19.58,273.942 38.341,229.585C56.453,186.765 82.371,148.317 115.378,115.311Z" style="fill:rgb(255,203,124);fill-rule:nonzero;"/>

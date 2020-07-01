@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <script defer src="js/lib/fontawesome-all.min.js"></script>
+  <script defer src="js/script.js"></script>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/style.css">
@@ -14,8 +15,11 @@
 <body>
 
   
-  <header id="page-hero" class="site-header">
-    <!--här börjar navbar-->
+  <header>
+    <!--här börjar navbar. Med hjälp av navbar komponent som finns i Bootstrap så har jag skapat en navbar som har fyra olika knapper. Container fluid som
+    används på rad 21 hjälper mig att skapa en resposonsiv grid med 100% width. Dessutom har jag använt olika Bootsrap classes för att 
+    förfina utseendet av min sida, t ex har 'navbar-dark' för att ha en vit text på min navbar-items samt 'bg-dark'  för att ha mörkt bakgrund
+    på det-->
     <nav class="site-nav family-sans navbar navbar-expand-md navbar-dark bg-dark">
 
       <div class="container-fluid">
@@ -37,18 +41,19 @@
       </section>
       </div>
     </nav>
-
-    <!--här börjar första sidan-->
-      <section class="container">
-        <div class="row">
-         <div class="main-buttons text-center col-12">
-          <button type="button" class="btn btn-warning mr-3 text-center">Beställa hem</button>
-          <button type="button" class="btn btn-warning ml-3 text-center">Se menyn</button>
-         </div>
-          </div>
-        </div>
-      </section>
   </header>
+
+    <!--här börjar första sidan. Jag använder Grid system för att presentera mina två knapper. Jag anger att jag vill att min container ska ha
+    en rad och den raden ska ha en stor kolumn som täcker hela raden. I kolumen lägger jag mina knapper.-->
+    <section class="main-container">
+      <div class="row">
+       <div class="main-buttons text-center col-12">
+        <button type="button" class="btn btn-warning mr-3 text-center">Beställa hem</button>
+        <button type="button" class="btn btn-warning ml-3 text-center">Se menyn</button>
+       </div>
+        </div>
+      </div>
+    </section>
 
   <!--här börjar pilar för CSS animation-->
   <div class="box">
@@ -57,9 +62,266 @@
     <span></span>
   </div>
 
+  <!--här börjar min meny-->
+  <article class="menu container bg-dark text-light">
+    <section class="menu-buttons row">
+      <div class="pizza-button col-3">
+        <button id="pizza-button" type="button" class="btn btn-info">Pizzor</button>
+      </div>
+
+      <div class="hamburger-button col-3">
+        <button id="hamburgare-button" type="button" class="btn btn-info">Hamburgare</button>
+      </div>
+
+      <div class="sallad-button col-3">
+        <button type="button" class="btn btn-info">Sallad</button>
+      </div>
+
+      <div class="drinks-button col-3">
+        <button type="button" class="btn btn-info">Drickor</button>
+      </div>
+
+    </section>
+
+    <!--här har jag några rader och kolumner som presenterar min pizza meny-->
+    <section class="menu-content container">
+      <div class="pizzor-menu row">
+     
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 1</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 2</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 3</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 4</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 5</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 6</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 7</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="pizzor-table container">
+            <div class="pizzor-content row">
+              <div class="pizzor-name col-8">
+                <h4>1- Pizza 8</h4>
+                <p>Kebab, Sallad och tomat</p>
+              </div>
+              <div class="pizzor-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+
+      </div>
+
+      <!--här har jag några rader och kolumner som presenterar min hamburgare meny-->
+      <div class="hamburgare-menu row">
+     
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 1</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 2</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 3</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 4</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 5</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 6</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 7</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>
+    
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="hamburgare-table container">
+            <div class="hamburgare-content row">
+              <div class="hamburgare-name col-8">
+                <h4>1- Hamburgare 8</h4>
+                <p>    Sallad och tomat</p>
+              </div>
+              <div class="hamburgare-price col-4">
+                <h4>50kr</h4>
+              </div>
+            </div>
+          </div>   
+        </div>            
+    </div>
+      
+    </section>
+  </article>
   
-   <!--här börjar andra sidan sidan-->
-  <article id="page-multicolumn" class="page-section text-center py-5">
+   <!--här börjar Om oss sidan-->
+  <article class="About-oss container">
     <header class="page-section-header container">
       <h2 class="page-section-title">Campus pizzeria</h2>
       <p class="page-section-text">Våra medarbetare har många års erfarenhet av att baka godaste pizzor</p>
@@ -91,7 +353,7 @@
                 <img class="d-block w-100" src="images/Pizza-1.jpg" alt="First slide">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100" src="images/Pizza-4.jpg" alt="Second slide">
+                <img class="d-block w-100" src="images/Pizza-1.jpg" alt="Second slide">
               </div>
               
             </div>
@@ -103,6 +365,42 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="row text-uppercase mt-5">
+
+        <section class="main-cards col-sm-12 col-lg-4 col-md-4 justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="images/scooter.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hemleverans inom 15 minunter</h5>
+              <p class="card-text">Från att du gör din beställning tills du får den hemma hos dig så får du räkna 15 minuter.</p>
+              <a href="#" class="btn btn-primary">Beställ nu</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-cards col-sm-12 col-lg-4 col-md-4 justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="images/scooter.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hemleverans inom 15 minunter</h5>
+              <p class="card-text">Från att du gör din beställning tills du får den hemma hos dig så får du räkna 15 minuter.</p>
+              <a href="#" class="btn btn-primary">Beställ nu</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-cards col-sm-12 col-lg-4 col-md-4 justify-content-center">
+          <div class="card" style="width: 18rem;">
+            <img src="images/scooter.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Hemleverans inom 15 minunter</h5>
+              <p class="card-text">Från att du gör din beställning tills du får den hemma hos dig så får du räkna 15 minuter.</p>
+              <a href="#" class="btn btn-primary">Beställ nu</a>
+            </div>
           </div>
         </section>
 
