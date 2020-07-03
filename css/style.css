@@ -1,22 +1,21 @@
+
 .main-container{
-        background: #c62222;
+   
         height: 90vh;
-        margin-bottom: 10px;
         color: #fff;
         font-size: 18px;
-        line-height: 50vh;
+        line-height: 5vh;
         text-align: center;  
-        border: 5px solid greenyellow;
+       
+
 }
 
-.row{
-    border: 5px solid grey;
+/*Här använder jag min jpg-bild som bakgrund */
+.menu{
+    background-image: url(../images/Pizza-1.jpg);
 }
 
 
-.About-oss{
-    background: lightblue;
-}
 
 /*Här börjar min CSS animation där jag skapar en border som bara har två kanter 'bottom & right' som har position absolute så att jag kan 
 flytta på den. Tanken är att den ska synas i mitt och i slutet av sidan så att användaren ska veta att jag har en sida neråt */
@@ -53,4 +52,55 @@ min halva border så att den ska se ut som en pil som pekar neråt*/
         opacity: 0;
         transform: rotate(45deg) translate(20px,20px);
     }
+}
+
+
+/*I och med att jag redan har kommenterat min animation med CSS så ska inte kommentera raderna under.
+Jag har kopierat dem rakt av från er kodexempel då jag vill snygga till min sida lite mer*/
+
+#btn{
+    border: none;
+    background-color: salmon;
+    text-align: center;
+    height: 40px;
+    font-size: 15px;
+    width: 120px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+#btn span{
+    display: inline-block;
+    transition: 0.5s;
+    position: relative;
+}
+
+#btn:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#btn:hover span{
+    padding-right: 24px;
+}
+
+#btn span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -24px;
+    transition: 0.5s;
+}
+
+/**För att snygga till min navbar så använder jag lite CSS-kod som jag inte kan få genom Bootrstrp
+**/
+.nav-item{
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 1rem;
 }

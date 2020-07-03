@@ -10,8 +10,8 @@
   <g id="XMLID_1864_" transform="matrix(0.67409,0,0,0.612457,224.634,138.299)">
       
       <!--Path är en av de effektiva element som finns i SVG. Med hjälp av den kan man rita linjer, kurvor, bågar och mer. i Pathen som vi har här under så ser vi bokstaven d som 
-	är ett attribut som innehåller en serie sökkommandon som definierar sökvägen som ska ritas. Svg är funkar som kordinat system där x =0 och y =0 är placerad längst upp  till vänster i själva html sidan. För att fi ska börja rita
-	så ser vi bokstaven M som står för move to, då flyttas själva ritningen till punkten x= 501 y=115 osv. Vi har en lång rad av dessa punkter och i slutet av de för de stil med färg och sånt där allting översättas till Vector bild i slutet.-->
+	är ett attribut som innehåller en serie sökkommandon som definierar sökvägen som ska ritas. Svg är funkar som kordinat system där x =0 och y =0 är placerad längst upp  till vänster i själva html sidan. För att vi ska börja rita
+	så ser vi bokstaven M som står för move to, då flyttas själva ritningen till punkten x= 501 y=115 osv. Man kan säga att den långa bokstäver och siffror är en bana som visar hur ritning ska gå till och som i slutet översättas till Vector bild.-->
    
      <path d="M501.634,487.318L409.45,78.027L409.306,78.06C401.47,91.878 386.638,101.208 369.62,101.208C240.68,101.209 132.704,192.624 107.062,314.044L105.501,363.052L124.53,363.052C144.121,363.052 160.004,378.934 160.004,398.525L160.004,479.436C160.004,491.898 170.107,502.001 182.568,502.001C195.031,502.001 205.133,491.898 205.133,479.436L205.133,466.751C205.133,458.226 212.045,451.315 220.57,451.315C225.971,451.315 230.725,448.54 233.484,444.338L233.481,444.336L487.32,501.626C495.898,503.562 503.566,495.897 501.634,487.318Z" style="fill:rgb(255,230,192);fill-rule:nonzero;"/>
     </g>

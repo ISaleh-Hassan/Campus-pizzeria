@@ -45,13 +45,21 @@
 
     <!--här börjar första sidan. Jag använder Grid system för att presentera mina två knapper. Jag anger att jag vill att min container ska ha
     en rad och den raden ska ha en stor kolumn som täcker hela raden. I kolumen lägger jag mina knapper.-->
-    <section class="main-container">
-      <div class="row">
-       <div class="main-buttons text-center col-12">
-        <button type="button" class="btn btn-warning mr-3 text-center">Beställa hem</button>
-        <button type="button" class="btn btn-warning ml-3 text-center">Se menyn</button>
-       </div>
+    <section class="main-container bg-dark">
+       <div class="row pt-5">
+         <div id="text-to-animate" class="text-center col-8 ">
+           <h3>Dagens lunch</h3>
+           <h3>från 75:-</h3>
+           <!--PNG bild-->
+           <img class="img-fluid" src="images/Cheese-Pizza-PNG-transparent.png" width="80px" height="80px" alt="">
+           <p style="text-align:center; text-decoration: underline;">Mån - Fre 11.00 - 14.00</p>
+         </div>
         </div>
+        <div class="row mt-5">
+          <div class="main-buttons text-center col-12 justify-content-center text-center">
+           <button type="button" id="btn" class="btn btn-warning mr-2 text-center"><span>Beställa nu</span></button>
+           <button type="button" id="btn" class="btn btn-warning ml-2 text-center"><span>Se menyn</span></button>
+          </div>
       </div>
     </section>
 
@@ -62,30 +70,106 @@
     <span></span>
   </div>
 
+
+    <!--här börjar Om oss sidan. Den består av en container-fluid som kommer att skapa min grid
+  på 100%. Sedan skapar jag en rad och ett par kolumner där den första används för att presentera min text samt den
+  andra kolumnen används för att presentera min video. När den här visas i en mobil så får varje kolumn hela skärmen. 
+  Det vill säga 12 kolumner-->
+  <article class="About-oss container-fluid bg-secondary text-light">
+    <header class="page-section-header container text-center pt-4">
+      <h2 class="page-section-title">Campus pizzeria</h2>
+      <p class="page-section-text">Våra medarbetare har många års erfarenhet av att baka godaste pizzor</p>
+      
+    </header>
+
+    <section class="layout-mulitcolumn container">
+      <div class="row  border border-secondary">
+
+        <section class="col-sm-12 col-lg-6 col-md-6 text-left">
+          <h5 class="layout-title pt-2">Vilka är vi?</h5>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, quisquam debitis! Praesentium,
+             vitae aliquid sequi unde suscipit nihil reiciendis labore, fugiat corporis ipsa nisi minima
+              possimus animi aperiam mollitia cumque impedit voluptas officia iste tenetur debitis! Quibusdam
+               ducimus quis accusamus dolor officia illum suscipit pariatur iure deserunt at adipisci ex
+                molestias incidunt vitae, eum exercitationem saepe omnis minima voluptatum a? Molestias
+                 nulla tenetur deleniti alias maxime a, in officia, doloremque at sequi reprehenderit
+                 sed delectus voluptate saepe dignissimos sit modi, eum maiores. Nulla hic quae nostrum,
+                  delectus rem iure dicta fugit id est sit eius accusamus blanditiis cumque totam tenetur 
+                  maxime corporis necessitatibus possimus ea, aliquam deserunt dolores culpa recusandae! 
+                 veritatis beatae debitis hic quas vitae molestiae itaque animi doloremque sunt.</p>  
+            </section>
+    
+        <!--Här visas min video. Med hjälp embed-responsive så får jag en responsiv video där storlek
+          passar bra i min kolumn Med attributen height och width har bestämt stroleken på bilden. 
+          Videon bör spelas upp automatiskt i när man surfar i datorn då jag har valt attributen 
+          auto play. attributen loop kommer att se till att video spelas om och om. -->
+        <section class="col-sm-12 col-lg-6 col-md-6">
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" autoplay loop controls src="images/Test-Video.mp4">
+              Din webbläsare stödjer inte video-taggen</video>
+          </div>
+             
+        </section>  
+      </div>
+      <section class="row">
+        <div class="col-12 mt-5">
+
+        </div>
+      </section>
+    </section>
+  </article>
   <!--här börjar min meny-->
-  <article class="menu container bg-dark text-light">
-    <section class="menu-buttons row">
-      <div class="pizza-button col-3">
-        <button id="pizza-button" type="button" class="btn btn-info">Pizzor</button>
-      </div>
+  <article class="menu container-fluid bg-dark text-light h-100 pb-5">
 
-      <div class="hamburger-button col-3">
-        <button id="hamburgare-button" type="button" class="btn btn-info">Hamburgare</button>
-      </div>
+            <!--Här spelas min audio upp. Videon bör spelas upp automatiskt i när man surfar
+           i datorn då jag har valt attributen 
+          auto play. attributen loop kommer att se till att audio spelas om och om. -->
+          <div class="row">
+            <div class=" h-100 text-center col-lg-6 col-sm-12  pt-5">
+              <img src="images/utan-transparent.png" alt="">
+              <h5>Njut av vår musik medan du väljer din mat</h5> <br>
+             <audio class="embed-responsive-item" type="audio/mp3" controls loop autoplay src="images/The Godfather Original Theme Song.mp3">
+               Din webbläsare stödjer inte audio-taggen</audio>
+            </div>
+          </div>
+          </div>
 
-      <div class="sallad-button col-3">
-        <button type="button" class="btn btn-info">Sallad</button>
+    <section class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <h1>Vår meny</h1>
       </div>
-
-      <div class="drinks-button col-3">
-        <button type="button" class="btn btn-info">Drickor</button>
+      <div class="col-12 d-flex justify-content-center">
+        <p>Ring oss nu så gör vi iordning godaste mat</p>     
       </div>
-
+      <div class="col-12 d-flex justify-content-center">
+        <p><i class="fa fa-phone" aria-hidden="true"></i>    Tel: 019-32 xxxx</p>      
+      </div>
+      </div>
+    </section>
+ 
+    <section class="container">
+      <section class="menu-buttons bg-secondary row p-3">
+        <div class="pizza-button col-3 d-flex justify-content-center">
+          <button id="pizza-button" type="button" class="btn btn-warning">Pizzor</button>
+        </div>
+  
+        <div class="hamburger-button col-3 d-flex justify-content-center">
+          <button id="hamburgare-button" type="button" class="btn btn-warning">Hamburgare</button>
+        </div>
+  
+        <div class="sallad-button col-3 d-flex justify-content-center">
+          <button id="sallad-button" type="button" class="btn btn-warning">Sallad</button>
+        </div>
+  
+        <div class="drinks-button col-3 d-flex justify-content-center">
+          <button id="drinks-button" type="button" class="btn btn-warning">Drickor</button>
+        </div>
+      </section>
     </section>
 
-    <!--här har jag några rader och kolumner som presenterar min pizza meny-->
+    <!--här har jag några rader och kolumner som presenterar mina pizza meny-->
     <section class="menu-content container">
-      <div class="pizzor-menu row">
+      <div class="pizzor-menu bg-secondary row">
      
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="pizzor-table container">
@@ -101,11 +185,12 @@
           </div>   
         </div>
 
+
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="pizzor-table container">
             <div class="pizzor-content row">
               <div class="pizzor-name col-8">
-                <h4>1- Pizza 2</h4>
+                <h4>6- Pizza 6</h4>
                 <p>Kebab, Sallad och tomat</p>
               </div>
               <div class="pizzor-price col-4">
@@ -119,7 +204,7 @@
           <div class="pizzor-table container">
             <div class="pizzor-content row">
               <div class="pizzor-name col-8">
-                <h4>1- Pizza 3</h4>
+                <h4>7- Pizza 7</h4>
                 <p>Kebab, Sallad och tomat</p>
               </div>
               <div class="pizzor-price col-4">
@@ -133,63 +218,7 @@
           <div class="pizzor-table container">
             <div class="pizzor-content row">
               <div class="pizzor-name col-8">
-                <h4>1- Pizza 4</h4>
-                <p>Kebab, Sallad och tomat</p>
-              </div>
-              <div class="pizzor-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>            
-
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="pizzor-table container">
-            <div class="pizzor-content row">
-              <div class="pizzor-name col-8">
-                <h4>1- Pizza 5</h4>
-                <p>Kebab, Sallad och tomat</p>
-              </div>
-              <div class="pizzor-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="pizzor-table container">
-            <div class="pizzor-content row">
-              <div class="pizzor-name col-8">
-                <h4>1- Pizza 6</h4>
-                <p>Kebab, Sallad och tomat</p>
-              </div>
-              <div class="pizzor-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>            
-
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="pizzor-table container">
-            <div class="pizzor-content row">
-              <div class="pizzor-name col-8">
-                <h4>1- Pizza 7</h4>
-                <p>Kebab, Sallad och tomat</p>
-              </div>
-              <div class="pizzor-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="pizzor-table container">
-            <div class="pizzor-content row">
-              <div class="pizzor-name col-8">
-                <h4>1- Pizza 8</h4>
+                <h4>8- Pizza 8</h4>
                 <p>Kebab, Sallad och tomat</p>
               </div>
               <div class="pizzor-price col-4">
@@ -201,65 +230,10 @@
 
       </div>
 
-      <!--här har jag några rader och kolumner som presenterar min hamburgare meny-->
-      <div class="hamburgare-menu row">
+      <!--här har jag några rader och kolumner som presenterar mina hamburgare meny-->
+      <div class="hamburgare-menu bg-secondary row">
      
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="hamburgare-table container">
-            <div class="hamburgare-content row">
-              <div class="hamburgare-name col-8">
-                <h4>1- Hamburgare 1</h4>
-                <p>    Sallad och tomat</p>
-              </div>
-              <div class="hamburgare-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>
-    
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="hamburgare-table container">
-            <div class="hamburgare-content row">
-              <div class="hamburgare-name col-8">
-                <h4>1- Hamburgare 2</h4>
-                <p>    Sallad och tomat</p>
-              </div>
-              <div class="hamburgare-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>            
-    
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="hamburgare-table container">
-            <div class="hamburgare-content row">
-              <div class="hamburgare-name col-8">
-                <h4>1- Hamburgare 3</h4>
-                <p>    Sallad och tomat</p>
-              </div>
-              <div class="hamburgare-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>
-    
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <div class="hamburgare-table container">
-            <div class="hamburgare-content row">
-              <div class="hamburgare-name col-8">
-                <h4>1- Hamburgare 4</h4>
-                <p>    Sallad och tomat</p>
-              </div>
-              <div class="hamburgare-price col-4">
-                <h4>50kr</h4>
-              </div>
-            </div>
-          </div>   
-        </div>            
-    
+      
         <div class="col-lg-6 col-md-6 col-sm-12">
           <div class="hamburgare-table container">
             <div class="hamburgare-content row">
@@ -316,106 +290,142 @@
           </div>   
         </div>            
     </div>
-      
+
+      <!--här har jag några rader och kolumner som presenterar mina salad meny-->
+    <div class="sallad-menu bg-secondary row">
+     
+  
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="salad-table container">
+          <div class="salad-content row">
+            <div class="salad-name col-8">
+              <h4>1- salad 5</h4>
+              <p>    Sallad och tomat</p>
+            </div>
+            <div class="salad-price col-4">
+              <h4>50kr</h4>
+            </div>
+          </div>
+        </div>   
+      </div>
+  
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="salad-table container">
+          <div class="salad-content row">
+            <div class="salad-name col-8">
+              <h4>1- salad 6</h4>
+              <p>    Sallad och tomat</p>
+            </div>
+            <div class="salad-price col-4">
+              <h4>50kr</h4>
+            </div>
+          </div>
+        </div>   
+      </div>            
+  
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="salad-table container">
+          <div class="salad-content row">
+            <div class="salad-name col-8">
+              <h4>1- salad 7</h4>
+              <p>    Sallad och tomat</p>
+            </div>
+            <div class="salad-price col-4">
+              <h4>50kr</h4>
+            </div>
+          </div>
+        </div>   
+      </div>
+  
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <div class="salad-table container">
+          <div class="salad-content row">
+            <div class="salad-name col-8">
+              <h4>1- salad 8</h4>
+              <p>    Sallad och tomat</p>
+            </div>
+            <div class="salad-price col-4">
+              <h4>50kr</h4>
+            </div>
+          </div>
+        </div>   
+      </div>            
+  </div>
+
+  <!--här har jag några rader och kolumner som presenterar min drckor meny-->
+  <div class="dricka-menu bg-secondary row">
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="dricka-table container">
+        <div class="dricka-content row">
+          <div class="dricka-name col-8">
+            <h4>1- dricka 5</h4>
+            <p>    Cola, Fanta och Sprite</p>
+          </div>
+          <div class="dricka-price col-4">
+            <h4>50kr</h4>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="dricka-table container">
+        <div class="dricka-content row">
+          <div class="dricka-name col-8">
+            <h4>1- dricka 6</h4>
+            <p>    Cola, Fanta och Sprite</p>
+          </div>
+          <div class="dricka-price col-4">
+            <h4>50kr</h4>
+          </div>
+        </div>
+      </div>   
+    </div>            
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="dricka-table container">
+        <div class="dricka-content row">
+          <div class="dricka-name col-8">
+            <h4>1- dricka 7</h4>
+            <p>    Cola, Fanta och Sprite</p>
+          </div>
+          <div class="dricka-price col-4">
+            <h4>50kr</h4>
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="dricka-table container">
+        <div class="dricka-content row">
+          <div class="dricka-name col-8">
+            <h4>1- dricka 8</h4>
+            <p>    Cola, Fanta och Sprite</p>
+          </div>
+          <div class="dricka-price col-4">
+            <h4>50kr</h4>
+          </div>
+        </div>
+      </div>   
+    </div>            
+</div>
     </section>
   </article>
   
-   <!--här börjar Om oss sidan-->
-  <article class="About-oss container">
-    <header class="page-section-header container">
-      <h2 class="page-section-title">Campus pizzeria</h2>
-      <p class="page-section-text">Våra medarbetare har många års erfarenhet av att baka godaste pizzor</p>
-    </header>
-
-    <section class="layout-mulitcolumn container">
-      <div class="row text-uppercase">
-
-        <section class="col-sm-12 col-lg-6 col-md-6 text-left">
-          <h5 class="layout-title pt-2">Vilka är vi?</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 
-            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
-            unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-
-        </section>
-  
-        <section class="col-sm-12 col-lg-6 col-md-6">
-          <h5 class="layout-title pt-2"></h5>
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100" src="images/Pizza-1.jpg" alt="First slide">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100" src="images/Pizza-1.jpg" alt="Second slide">
-              </div>
-              
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </section>
-      </div>
-
-      <div class="row text-uppercase mt-5">
-
-        <section class="main-cards col-sm-12 col-lg-4 col-md-4 justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="images/scooter.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hemleverans inom 15 minunter</h5>
-              <p class="card-text">Från att du gör din beställning tills du får den hemma hos dig så får du räkna 15 minuter.</p>
-              <a href="#" class="btn btn-primary">Beställ nu</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-cards col-sm-12 col-lg-4 col-md-4 justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="images/scooter.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hemleverans inom 15 minunter</h5>
-              <p class="card-text">Från att du gör din beställning tills du får den hemma hos dig så får du räkna 15 minuter.</p>
-              <a href="#" class="btn btn-primary">Beställ nu</a>
-            </div>
-          </div>
-        </section>
-
-        <section class="main-cards col-sm-12 col-lg-4 col-md-4 justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <img src="images/scooter.svg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Hemleverans inom 15 minunter</h5>
-              <p class="card-text">Från att du gör din beställning tills du får den hemma hos dig så får du räkna 15 minuter.</p>
-              <a href="#" class="btn btn-primary">Beställ nu</a>
-            </div>
-          </div>
-        </section>
-
-      </div>
-    </section>
-  </article>
-
+ 
   <!--Footer börjar här-->
-  <footer class="site-footer bg-secondary text-light d-flex justify-content-center">
-    <section class="layout-social py-5">
-      <a class="text-light px-2" href="https://www.facebook.com/"><i class="layout-icon fab fa-facebook"></i></a>
-      <a class="text-light px-2" href="https://www.facebook.com/"><i class="layout-icon fab fa-instagram"></i></a>
-      <a class="text-light px-2" href="https://www.facebook.com/"><i class="layout-icon fab fa-youtube"></i></a>
+  <footer class="container-fluid bg-secondary text-light">
+    <section class="row justify-content-center text-center">
+      <div class="col-4 col-sm-12">
+        <h5>Våra öppettider</h5>
+        <p>Alla dagar 10.00 - 22.00</p>
+        <h5>Adress</h5>
+        <p>Studentgatan 16, Örebro</p>
+      </div>
     </section>
-
+ 
   </footer>
 
   <script src="js/lib/jquery.min.js"></script>
