@@ -33,9 +33,9 @@
 
         <section class="collapse navbar-collapse  position-static" id="myTogglerNav">
         <div class="navbar-nav mx-auto">
-         <a class="nav-item nav-link" href="#page-hero">Hem</a>
-         <a class="nav-item nav-link" href="#page-multicolumn">Meny</a>
-         <a class="nav-item nav-link" href="#page-media">Om oss</a>
+         <a class="nav-item nav-link" href="#hem-side">Hem</a>
+         <a class="nav-item nav-link" href="#about-us">Om oss</a>
+         <a class="nav-item nav-link" href="#menu">Meny</a>
          <a class="nav-item nav-link" href="#page-photogrid">Kontakta oss</a>
         </div>
       </section>
@@ -45,7 +45,7 @@
 
     <!--här börjar första sidan. Jag använder Grid system för att presentera mina två knapper. Jag anger att jag vill att min container ska ha
     en rad och den raden ska ha en stor kolumn som täcker hela raden. I kolumen lägger jag mina knapper.-->
-    <section class="main-container bg-dark">
+    <section id="hem-sida" class="main-container bg-dark">
        <div class="row pt-5">
          <div id="text-to-animate" class="text-center col-8 ">
            <h3>Dagens lunch</h3>
@@ -57,8 +57,8 @@
         </div>
         <div class="row mt-5">
           <div class="main-buttons text-center col-12 justify-content-center text-center">
-           <button type="button" id="btn" class="btn btn-warning mr-2 text-center"><span>Beställa nu</span></button>
-           <button type="button" id="btn" class="btn btn-warning ml-2 text-center"><span>Se menyn</span></button>
+           <button type="button" id="btn" class="btn btn-warning mr-2 text-center"><a href="https://www.foodora.se/en/restaurant/v9kz/orebro-pizzeria-campus?r=1#"><span>Beställa nu</span></a></button>
+           <button type="button" id="btn" class="btn btn-warning ml-2 text-center"><a href="#menu"><span>Se menyn</span></a></button>
           </div>
       </div>
     </section>
@@ -75,7 +75,7 @@
   på 100%. Sedan skapar jag en rad och ett par kolumner där den första används för att presentera min text samt den
   andra kolumnen används för att presentera min video. När den här visas i en mobil så får varje kolumn hela skärmen. 
   Det vill säga 12 kolumner-->
-  <article class="About-oss container-fluid bg-secondary text-light">
+  <article id="about-us" class="About-oss container-fluid bg-secondary text-light">
     <header class="page-section-header container text-center pt-4">
       <h2 class="page-section-title">Campus pizzeria</h2>
       <p class="page-section-text">Våra medarbetare har många års erfarenhet av att baka godaste pizzor</p>
@@ -119,7 +119,7 @@
     </section>
   </article>
   <!--här börjar min meny-->
-  <article class="menu container-fluid bg-dark text-light h-100 pb-5">
+  <article id="menu" class="menu container-fluid bg-dark text-light h-100 pb-5">
 
             <!--Här spelas min audio upp. Videon bör spelas upp automatiskt i när man surfar
            i datorn då jag har valt attributen 
@@ -142,7 +142,7 @@
         <p>Ring oss nu så gör vi iordning godaste mat</p>     
       </div>
       <div class="col-12 d-flex justify-content-center">
-        <p><i class="fa fa-phone" aria-hidden="true"></i>    Tel: 019-32 xxxx</p>      
+        <p> <img src="images/phone.svg" alt="">    Tel: 019-32 xxxx</p>      
       </div>
       </div>
     </section>
